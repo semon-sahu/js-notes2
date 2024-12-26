@@ -24,3 +24,16 @@ document.write(name, age,
 //camelCase
 //3.underscore or dollar sings should not
 //4.be used at start variable name
+//global scope and block socpe global means kahi bhi declare kar sakte ho
+//var kahi bhi ho saka hai aandar or bahar function  ke
+//let and const is a block scpe 
+
+
+//Hoisting in JavaScript: is a built-in language behavior that moves declarations of functions, variables, and classes to the top of their scope before code execution 
+//hoisting use only var not let and const 
+
+
+//what is DOM=document object model is a code of html is convert in browser form is called web page 
+//dom is also change attribute ,css and in innerhtml
+
+ 
