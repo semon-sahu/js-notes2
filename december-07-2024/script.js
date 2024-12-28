@@ -42,4 +42,4 @@ const cars=["audi","mercides","jaguar","honda city"];
 let text="<ul>";
 cars.forEach(function(car){
     
-}
+})
