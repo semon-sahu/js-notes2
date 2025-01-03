@@ -1,66 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-</head>
-<style>
-    body{
-        background-color: aquamarine;
+  </head>
+  <style>
+    body {
+      background-color: aquamarine;
     }
-    #myBox{
-        width: 500px;
-        /* height: 60px; */
-        background-color: antiquewhite;
-        margin: auto;
-
-
+    #myBox {
+      width: 500px;
+      /* height: 60px; */
+      background-color: antiquewhite;
+      margin: auto;
     }
-    #myinput{
-        width: 450px;
-        height: 40px;
-        margin: 10px;
-        /* margin: auto; */
-        align-items: center;
-        font-family: 20px;
-        font-weight: bold;
-
+    #myinput {
+      width: 450px;
+      height: 40px;
+      margin: 10px;
+      /* margin: auto; */
+      align-items: center;
+      font-family: 20px;
+      font-weight: bold;
     }
-    button{
-        margin: 10px;
-        width: 50px;
-        height: 50px;
-
-
+    button {
+      margin: 10px;
+      width: 50px;
+      height: 50px;
     }
-</style>
-<body>
-
+  </style>
+  <script>
+    function onButtFirst() {
+      console.log(
+        "document-->",
+        (document.getElementById("myinput").value +=
+          document.getElementById("btn1").innerHTML)
+      );
+      console.log("btn1-->", document.getElementById("btn1").innerHTML);
+      document.getElementById("myinput").value +=
+        document.getElementById("btn1").innerHTML;
+    }
+  </script>
+  <body>
     <div id="myBox">
-        <input type="text" id="myinput">
-        <button id="btn1" onclick="document.getElementById('myinput').value+=document.getElementById('btn1').innerHTML">1</button>
-        <button id="btn2" onclick="document.getElementById('myinput').value+=document.getElementById('btn2').innerHTML">2</button>
-        <button id="btn3" onclick="document.getElementById('myinput').value+=document.getElementById('btn3').innerHTML">3</button>
-        <button id="btn4" onclick="document.getElementById('myinput').value+=document.getElementById('btn4').innerHTML">4</button>
-        <button id="btn5" onclick="document.getElementById('myinput').value+=document.getElementById('btn5').innerHTML">5</button>
-        <button id="btn6" onclick="document.getElementById('myinput').value+=document.getElementById('btn6').innerHTML">6</button>
-        <button id="btn7" onclick="document.getElementById('myinput').value+=document.getElementById('btn7').innerHTML">7</button>
-        <button id="btn8" onclick="document.getElementById('myinput').value+=document.getElementById('btn8').innerHTML">8</button>
-        <button id="btn9" onclick="document.getElementById('myinput').value+=document.getElementById('btn9').innerHTML">9</button>
-        <button id="btn0" onclick="document.getElementById('myinput').value+=document.getElementById('btn0').innerHTML">0</button>
-        <button id="btnplus" onclick="document.getElementById('myinput').value+=document.getElementById('btnplus').innerHTML">+</button>
-        <button id="btnminnus" onclick="document.getElementById('myinput').value+=document.getElementById('btnminnus').innerHTML">-</button>
-        <button id="btnmulti" onclick="document.getElementById('myinput').value+=document.getElementById('btnmulti').innerHTML">*</button>
-        <button id="btndiv" onclick="document.getElementById('myinput').value+=document.getElementById('btndiv').innerHTML">/</button>
-        <button id="btn1" onclick="document.getElementById('myinput').value+=document.getElementById('btn1').innerHTML">=</button>
-        <button>CLR</button>
-        <button>Bck</button>
-
-        
-
-
+      <input type="text" id="myinput" />
+      <button id="btn1" onclick="onButtFirst()">1</button>
+      <button
+        id="btn2"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btn2').innerHTML"
+      >
+        2
+      </button>
+      <button
+        id="btn3"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btn3').innerHTML"
+      >
+        3
+      </button>
+      <button
+        id="btn4"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btn4').innerHTML"
+      >
+        4
+      </button>
+      <button
+        id="btn5"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btn5').innerHTML"
+      >
+        5
+      </button>
+      <button
+        id="btn6"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btn6').innerHTML"
+      >
+        6
+      </button>
+      <button
+        id="btn7"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btn7').innerHTML"
+      >
+        7
+      </button>
+      <button
+        id="btn8"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btn8').innerHTML"
+      >
+        8
+      </button>
+      <button
+        id="btn9"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btn9').innerHTML"
+      >
+        9
+      </button>
+      <button
+        id="btn0"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btn0').innerHTML"
+      >
+        0
+      </button>
+      <button
+        id="btnplus"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btnplus').innerHTML"
+      >
+        +
+      </button>
+      <button
+        id="btnminnus"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btnminnus').innerHTML"
+      >
+        -
+      </button>
+      <button
+        id="btnmulti"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btnmulti').innerHTML"
+      >
+        *
+      </button>
+      <button
+        id="btndiv"
+        onclick="document.getElementById('myinput').value+=document.getElementById('btndiv').innerHTML"
+      >
+        /
+      </button>
+      <button
+        id="btnans"
+        onclick="document.getElementById('myinput').value=eval(document.getElementById('myinput').value)"
+      >
+        =
+      </button>
+      <button>CLR</button>
+      <button>Bck</button>
     </div>
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>

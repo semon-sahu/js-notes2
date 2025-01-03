@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- 1. -->
+
+<!-- <p id="demo">Cybrom!</p>
+<button onclick="mystart()"> start</button>
+<button  onclick="mystop()"> stop</button> -->
+
+
+<center>
+<!-- 2. -->
+<h1 id="demo">0</h1>
+<button onclick="mystart()">start</button>
+<button onclick="mystop()">stop</button>
+<button onclick="myclear()">clear</button>
+</center>
+ 
+<script>
+
+    // function myData(){
+        
+    //     document.getElementById("demo").innerHTML+="Happy new year !!";
+    // }
+    // setInterval(myData,5000);
+    
+    //setinterval is a function which is used to run our code in 5 ya ifr 10 sec in animation
+    
+    // 1.
+
+//     let myInt;//is bariable ko bahar diyabecaus is a global socpe other wise its not work in block socpe 
+// function myData(){
+//     document.getElementById("demo").innerHTML+="Cybrom!!";
+// }
+// function mystart(){
+//     myInt=setInterval(myData,1000);
+// }
+// function mystop(){
+//     clearInterval(myInt)
+// }
+
+
+let myint;
+function myCount(){
+    let mynum=Number(document.getElementById("demo").innerHTML);
+    mynum++;
+    document
+    .getElementById("demo").innerHTML=mynum;
+
+}
+function mystart(){
+    myint=setInterval(myCount,1000);
+
+}
+function mystop(){
+ clearInterval(myint);
+    
+}
+function myclear(){
+
+ clearInterval(myint);
+ document.getElementById("demo").innerHTML=0;
+    
+}
+</script>
+    
+</body>
+</html>
