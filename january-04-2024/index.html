@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #line{
+        width: 10px;
+        height: 10px;
+        background-color: red;
+    }
+  </style>
+  <body>
+    <!-- <h1 id="demo">Welcome!</h1>
+    <button onclick="display()">click here</button>
+    <button onclick="myStop()">stop</button>
+
+    <-- 2one  -->
+
+    <!-- <h1 id="demo1">0</h1>
+    <button onclick="myStart1()">start</button>
+    <button onclick="myStop1()">stop</button> --> 
+
+
+    <!-- 3 one  -->
+
+    <button onclick="myLine()">click here</button>
+    <br><hr>
+    <div id="line"> </div>
+
+    <script>
+
+
+
+    //   let myInt;
+    //   function myFun() {
+    //     document.getElementById("demo").innerHTML += "Happy new Year 2025!";
+    //   }
+    //   function display() {
+    //     setTimeout(myFun, 5000);
+    //     //setimeout ek bar chalta hai  but setinterval bar bar chalta hai
+    //   }
+    //   function myStop() {
+    //     clearInterval(myInt);
+    //   }
+
+      // 2 one
+
+    //   function mystart() {
+    //     let mydata = Number(document.getElementById("demo1").innerHTML);
+    //     mydata++;
+    //     document.getElementById("demo1").innerHTML = mydata;
+    //     setTimeout(mystart, 1000);
+    //   }
+
+    // 3 one 
+
+    let wdt=100;
+    function myLine(){
+        let obj=document.getElementById("line");
+        wdt=wdt+1;
+        obj.style.width=wdt+"px";
+        setTimeout(myLine,10);
+    }
+    </script>
+  </body>
+</html>
