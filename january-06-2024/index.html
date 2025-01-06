@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time </title>
+</head>
+    <script>
+const d=new Date("2015-03-25");
+const d2=new Date("03-25-2015");
+const d3=new Date("Mar 25 2015");
+const d4=new Date("25 Mar 2015");
+
+document.write("<h1>",d,"<h1/>");
+document.write("<h1>",d2,"<h1/>");
+document.write("<h1>",d3,"<h1/>");
+document.write("<h1>",d4,"<h1/>");
+
+        let Totalmysec=Date.now();
+        let Dobsec=Date.parse("2002-01-28");
+        let agesec=Totalmysec-Dobsec;
+document.write("<h1>total millisecond:",Totalmysec,"<h1/>");
+document.write("<h1>total Dobsec:",Dobsec,"<h1/>");
+document.write("<h1>total Total age in millisecond:",agesec,"<h1/>");
+
+
+
+const s=new Date("2002","01","28");
+const monthNum=s.getMonth();
+const month=["jan","feb","mar"]
+document.write("<h1>",month[monthNum],"<h1/>");
+
+
+//     function myMsec(){
+//         let Totalmysec=Data.now();
+//         document.getElementById("demo").innerHTML=Totalmysec;
+//     }
+// setInterval(myMsec,1000);
+
+    </script>
+<body>
+
+    <!-- <h1 id="demo">answer</h1>
+    <button onclick="mystart()">start</button> -->
+
+</body>
+</html>
