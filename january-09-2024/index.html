@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      async function mydispaly() {
+        let myObj = await fetch("http://localhost:3000/students");
+        //console.log(myobj);
+        let MyData = await myObj.json();
+        //console.log(MyData);
+        let Table = `<table>
+                <tr>
+                    <th>rollno</th>
+                    <th>name</th>
+                    <th>city</th>
+                    <th>fee</th>
+                    </tr>
+                    `;
+        MyData.map((key) => {
+          Table+= `<tr>
+                            <td> ${key.rollno}</td>
+                            <td> ${key.name}</td>
+                            <td> ${key.city}</td>
+                            <td> ${key.fee}</td>
+                           </tr>
+                            `;
+        });
+        Table += '</table>';
+        document.getElementById("demo").innerHTML = Table;
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="mydispaly()">Show Data</button>
+    <hr />
+    <p id="demo"></p>
+  </body>
+</html>
