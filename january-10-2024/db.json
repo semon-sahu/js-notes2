@@ -1,0 +1,39 @@
+{
+  "students": [
+    {
+      "rollno": 121,
+      "name": "schin",
+      "city": "bhopal",
+      "fee": "20000",
+      "id": "fa01"
+    },
+    {
+      "rollno": 122,
+      "name": "vino",
+      "city": "vidisha",
+      "fee": "15000",
+      "id": "85e8"
+    },
+    {
+      "rollno": 123,
+      "name": "rahul",
+      "city": "kokta",
+      "fee": "150000",
+      "id": "dd5d"
+    },
+    {
+      "id": "e2dd",
+      "rollno": {},
+      "name": "BSJDB",
+      "city": "VVJH",
+      "fee": "565"
+    },
+    {
+      "id": "9d3d",
+      "rollno": {},
+      "name": "cxhjsvvhllk",
+      "city": "bho",
+      "fee": "100000"
+    }
+  ]
+}

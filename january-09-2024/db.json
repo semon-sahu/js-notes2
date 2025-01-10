@@ -7,40 +7,40 @@
       "fee": "20000"
     },
     {
-      "rollno": 121,
-      "name": "schin",
-      "city": "bhopal",
+      "rollno": 122,
+      "name": "vino",
+      "city": "vidisha",
+      "fee": "15000"
+    },
+    {
+      "rollno": 123,
+      "name": "rahul",
+      "city": "kokta",
+      "fee": "150000"
+    },
+    {
+      "rollno": 124,
+      "name": "akash",
+      "city": "pune",
       "fee": "20000"
     },
     {
-      "rollno": 121,
-      "name": "schin",
-      "city": "bhopal",
-      "fee": "20000"
+      "rollno": 125,
+      "name": "piyush",
+      "city": "sehore",
+      "fee": "45000"
     },
     {
-      "rollno": 121,
-      "name": "schin",
-      "city": "bhopal",
-      "fee": "20000"
+      "rollno": 126,
+      "name": "shiv",
+      "city": "damho",
+      "fee": "78500"
     },
     {
-      "rollno": 121,
-      "name": "schin",
-      "city": "bhopal",
-      "fee": "20000"
-    },
-    {
-      "rollno": 121,
-      "name": "schin",
-      "city": "bhopal",
-      "fee": "20000"
-    },
-    {
-      "rollno": 121,
-      "name": "schin",
-      "city": "bhopal",
-      "fee": "20000"
+      "rollno": 127,
+      "name": "Rajul",
+      "city": "banglor",
+      "fee": "90000"
     }
   ]
 }
