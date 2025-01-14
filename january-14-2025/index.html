@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body bgcolor="pink">
+    <h1 id="demo">Welcome to My world</h1>
+    <h2 id="demo1">Welcome to My world</h2>
+    <h2 id="demo2">Welcome to My world</h2>
+    <h2 id="demo3">Welcome to My world</h2>
+    <script type="module">
+
+        //destructure object
+        
+const  student={
+    name:"sachin",
+    age:24,
+    city:"pune",
+    collage:"pict"
+}
+const {name,age,city,collage}=student;
+document.getElementById("demo").innerHTML=name;
+document.getElementById("demo1").innerHTML=age;
+document.getElementById("demo2").innerHTML=city;
+document.getElementById("demo3").innerHTML=collage;
+
+
+
+    //   import { name, age, city } from "./index.js";
+    //   document.getElementById("demo").innerHTML =
+    //     "nmae: " + name + " age: " + age + " city: " + city;
+
+
+    //  import collage from "./index.js";
+    //  import {name,age}from "/.index.js";
+
+
+    // document.getelement("demo").innerHTML =collage();
+    // document.getelement("demo1").innerHTML="my name:"+name+"my age:"+age;
+    </script>
+  </body>
+</html>
