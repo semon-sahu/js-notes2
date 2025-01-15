@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="demo">welcome</h1>
+    <h2 id="demo2">Welcome</h2>
+    <hr>
+    <h2 id="demo3">Welcome</h2>
+    <h2 id="demo4">Welcome</h2>
+
+    <script>
+        //replace() method
+
+        let str="welcome to the cybrom  world  in CYBROM there are SO many student CyBrom!";
+        document.getElementById("demo").innerHTML=str;
+
+        // let str1=str.replace("cybrom","google");//replace the first occurance of the word
+
+        let str1=str.replace(/cybrom/ig,"google");// (ig)replace all the occurance of the word
+
+        document.getElementById("demo2").innerHTML=str1;
+
+
+        //match() method
+
+        let text="is this all there is hshkhdh";
+        // let text="1,2,3,4,5,6,7,8,9,12545,4586,228634";
+
+        let pattern=/[a-z]/g;//seacrh a to z in globel form 
+        // let pattern=/[1-4]/g;//seacrh 1 to 4 in globel form 
+        let result=text.match(pattern);
+        document.getElementById("demo3").innerHTML=result;
+
+
+    </script>
+    
+</body>
+</html>
